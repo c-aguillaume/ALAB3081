@@ -1,3 +1,127 @@
+const n1 = 30;
+const n2 = 15;
+const n3 = 20;
+const n4 = 5;
+
+
+// Homewok
+
+// Q1: Check if all numbers are divisible by 5. Cache the result in a variable.
+
+    const divisibleBy5 = (n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0);
+    console.log("Are all the numbers divisible by 5?\nResult: " + divisibleBy5);
+
+// $ node index
+// Are all the numbers divisible by 5?
+// Result: true
+
+// Q2:Check if the first number is larger than the last. Cache the result in a variable.
+
+    const firstNumLarger = (n1 > n4);
+    console.log("Is the first number larger than the last?\nResult: " + firstNumLarger);
+
+// $ node index
+// Is the first number larger than the last?
+// Result: true
+
+// Q3: Subtract the first number from the second number.
+
+    const subtractFirst = (n1 - n2);
+    console.log("What is the value of subtracting the first number from the second number?\nResult: " + subtractFirst)
+
+// $ node index
+// What is the value of subtracting the first number from the second number?
+// Result: 15
+
+// Q4: Multiply the result by the third number.
+
+    const multiplyFirstNum = (subtractFirst * n3);
+    console.log("What is the result when you multiply the result of the previous answer by the 3rd number?\nResult: " + multiplyFirstNum)
+
+// What is the result when you multiply the result of the previous answer by the 3rd number
+// Result: 300
+
+// Q5: Find the remainder of dividing the result by the fourth number.
+
+    const remainderNum = (multiplyFirstNum % n4);
+    console.log("What is the remainder of dividing the result by the fourth number?\nResult: " + remainderNum)
+
+// What is the remainder of dividing the result by the fourth number?
+// Result: 0
+
+// Q6: Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+// const over25Final = (n1 > 25 || n2>)
+
+
+// Part 2:
+
+const totalMiles = 1500;
+const fuelCost = 3;
+const budget = 175;
+const mph55 = 55;
+const mph60 = 60;
+const mph75 = 75;
+const mpg30 = 30;
+const mpg28 = 28;
+const mpg23 = 23;
+
+// Q1: How many gallons of fuel will you need for the entire trip?
+   const milesPerGallon55 = (totalMiles / mpg30);
+   console.log("Total Gallons needed at 55 miles per hour\nResult: " + milesPerGallon55 + " Gallons")
+
+   const milesPerGallon60 = (totalMiles / mpg28);
+   console.log("Total Gallons needed at 60 miles per hour\nResult: " + milesPerGallon60 + " Gallons")
+
+   const milesPerGallon75 = (totalMiles / mpg23);
+   console.log("Total Gallons needed at 75 miles per hour\nResult: " + milesPerGallon75 + " Gallons")
+
+// Q2: Will your budget be enough to cover the fuel expense?
+    const trip1 = (milesPerGallon55 * fuelCost);
+    console.log("Will budget be enough to cover fuel expense at 55 MPH? " + !(trip1 > budget))
+
+// Will budget be enough to cover fuel expense at 55 MPH?
+// Result: true
+
+    const trip2 = (milesPerGallon60 * fuelCost);
+    console.log("Will budget be enough to cover fuel expense at 60 MPH? " + !(trip2 > budget))
+
+// Will budget be enough to cover fuel expense at 60 MPH?
+// Result: true
+
+    const trip3 = (milesPerGallon75 * fuelCost);
+    console.log("Will budget be enough to cover fuel expense at 75 MPH? " + !(trip3 > budget))
+
+// Will budget be enough to cover fuel expense at 75 MPH?
+// Result: false
+
+// Q3: How long will the trip take, in hours?
+    const tripTime1 = (totalMiles / mph55);
+    console.log("The total trip time at 55 MPH will be " + tripTime1 + " hours")
+
+// The total trip time at 55 MPH will be Result:
+// 27.272727272727273 hours
+
+    const tripTime2 = (totalMiles / mph60);
+    console.log("The total trip time at 60 MPH will be " + tripTime2 + " hours")
+
+// The total trip time at 60 MPH will be Result:
+// 25 hours
+
+    const tripTime3 = (totalMiles / mph75);
+    console.log("The total trip time at 75 MPH will be " + tripTime3 +  " hours")
+
+// The total trip time at 75 MPH will be Result:
+// 20 hours
+
+// Q4: Compare the results when traveling 55,60,75 mph. Which makes the most sense for the trip?
+
+    console.log(`At 60 MPH the total gallons needed for the trip is ${milesPerGallon60}, and although you can get more MPG driving at 55 MPH the total cost to drive to save ${tripTime1 - tripTime2} hours is more beneficial to me.`);
+
+
+
+
+
+// Copied sandbox example
 // The initial numbers that must be verified.
 // const n1 = 30;
 // const n2 = 15;
@@ -49,122 +173,3 @@
 
 
 // The initial numbers that must be verified.
-
-
-const n1 = 30;
-const n2 = 15;
-const n3 = 20;
-const n4 = 5;
-
-
-// Homewok
-
-// Q1: Check if all numbers are divisible by 5. Cache the result in a variable.
-
-const divisibleBy5 = (n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0);
-console.log("Are all the numbers divisible by 5?\nResult: " + divisibleBy5);
-
-// $ node index
-// Are all the numbers divisible by 5?
-// Result: true
-
-// Q2:Check if the first number is larger than the last. Cache the result in a variable.
-
-const firstNumLarger = (n1 > n4);
-console.log("Is the first number larger than the last?\nResult: " + firstNumLarger);
-
-// $ node index
-// Is the first number larger than the last?
-// Result: true
-
-// Q3: Subtract the first number from the second number.
-
-const subtractFirst = (n1 - n2);
-console.log("What is the value of subtracting the first number from the second number?\nResult: " + subtractFirst)
-
-// $ node index
-// What is the value of subtracting the first number from the second number?
-// Result: 15
-
-// Q4: Multiply the result by the third number.
-
-const multiplyFirstNum = (subtractFirst * n3);
-console.log("What is the result when you multiply the result of the previous answer by the 3rd number?\nResult: " + multiplyFirstNum)
-
-// What is the result when you multiply the result of the previous answer by the 3rd number
-// Result: 300
-
-// Q5: Find the remainder of dividing the result by the fourth number.
-
-const remainderNum = (multiplyFirstNum % n4);
-console.log("What is the remainder of dividing the result by the fourth number?\nResult: " + remainderNum)
-
-// What is the remainder of dividing the result by the fourth number?
-// Result: 0
-
-// Q6: Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
-// const over25Final = (n1 > 25 || n2>)
-
-
-// Part 2:
-
-const totalMiles = 1500;
-const fuelCost = 3;
-const budget = 175;
-const mph55 = 55;
-const mph60 = 60;
-const mph75 = 75;
-const mpg30 = 30;
-const mpg28 = 28;
-const mpg23 = 23;
-
-// Q1: How many gallons of fuel will you need for the entire trip?
-   const milesPerGallon55 = (totalMiles / mpg30);
-   console.log("Total Gallons needed at 55 miles per hour\nResult: " + milesPerGallon55 + " Gallons")
-
-   const milesPerGallon60 = (totalMiles / mpg28);
-   console.log("Total Gallons needed at 60 miles per hour\nResult: " + milesPerGallon60 + " Gallons")
-
-   const milesPerGallon75 = (totalMiles / mpg23);
-   console.log("Total Gallons needed at 75 miles per hour\nResult: " + milesPerGallon75 + " Gallons")
-
-// Q2: Will your budget be enough to cover the fuel expense?
-const trip1 = (milesPerGallon55 * fuelCost);
-console.log("Will budget be enough to cover fuel expense at 55 MPH? " + !(trip1 > budget))
-
-// Will budget be enough to cover fuel expense at 55 MPH?
-// Result: true
-
-const trip2 = (milesPerGallon60 * fuelCost);
-console.log("Will budget be enough to cover fuel expense at 60 MPH? " + !(trip2 > budget))
-
-// Will budget be enough to cover fuel expense at 60 MPH?
-// Result: true
-
-const trip3 = (milesPerGallon75 * fuelCost);
-console.log("Will budget be enough to cover fuel expense at 75 MPH? " + !(trip3 > budget))
-
-// Will budget be enough to cover fuel expense at 75 MPH?
-// Result: false
-
-// Q3: How long will the trip take, in hours?
-const tripTime1 = (totalMiles / mph55);
-console.log("The total trip time at 55 MPH will be " + tripTime1 + " hours")
-
-// The total trip time at 55 MPH will be Result:
-// 27.272727272727273 hours
-
-const tripTime2 = (totalMiles / mph60);
-console.log("The total trip time at 60 MPH will be " + tripTime2 + " hours")
-
-// The total trip time at 60 MPH will be Result:
-// 25 hours
-
-const tripTime3 = (totalMiles / mph75);
-console.log("The total trip time at 75 MPH will be " + tripTime3 +  " hours")
-
-// The total trip time at 75 MPH will be Result:
-// 20 hours
-
-// Q4: Compare the results when traveling 55,60,75 mph. Which makes the most sense for the trip?
-
