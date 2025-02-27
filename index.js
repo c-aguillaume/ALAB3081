@@ -18,10 +18,10 @@
 // // // arithmetic to count the total number of odd numbers.
 // const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 
-Check three: no number larger than 25
-This time, we use the OR operator to check
-if ANY of the numbers is larger than 25.
-const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
+// Check three: no number larger than 25
+// This time, we use the OR operator to check
+// if ANY of the numbers is larger than 25.
+// const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
 // // Check four: all unique numbers
 // // This is long, and there are more efficient
@@ -106,14 +106,28 @@ console.log("What is the remainder of dividing the result by the fourth number?\
 
 // Part 2:
 
-// Q1: How many gallons of fuel will you need for the entire trip?
-
 const totalMiles = 1500;
 const fuelCost = 3;
 const budget = 175;
+const mph55 = 55;
+const mph60 = 60;
+const mph75 = 75;
+const mpg30 = 30;
+const mpg28 = 28;
+const mpg23 = 23;
 
+// Q1: How many gallons of fuel will you need for the entire trip?
+   const milesPerGallon55 = (totalMiles / mpg30);
+   console.log("Total Gallons needed at 55 miles per hour\nResult: " + milesPerGallon55 + " Gallons")
 
+   const milesPerGallon60 = (totalMiles / mpg28);
+   console.log("Total Gallons needed at 60 miles per hour\nResult: " + milesPerGallon60 + " Gallons")
+
+   const milesPerGallon75 = (totalMiles / mpg23);
+   console.log("Total Gallons needed at 75 miles per hour\nResult: " + milesPerGallon75 + " Gallons")
 
 // Q2: Will your budget be enough to cover the fuel expense?
+
+
 // Q3: How long will the trip take, in hours?
 // Q4: Compare the results when traveling 55,60,75 mph. Which makes the most sense for the trip?
