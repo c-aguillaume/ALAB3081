@@ -127,7 +127,42 @@ const mpg23 = 23;
    console.log("Total Gallons needed at 75 miles per hour\nResult: " + milesPerGallon75 + " Gallons")
 
 // Q2: Will your budget be enough to cover the fuel expense?
+const trip1 = (milesPerGallon55 * fuelCost);
+console.log("Will budget be enough to cover fuel expense at 55 MPH?\nResult: " + !(trip1 > budget))
 
+// Will budget be enough to cover fuel expense at 55 MPH?
+// Result: true
+
+const trip2 = (milesPerGallon60 * fuelCost);
+console.log("Will budget be enough to cover fuel expense at 60 MPH?\nResult: " + !(trip2 > budget))
+
+// Will budget be enough to cover fuel expense at 60 MPH?
+// Result: true
+
+const trip3 = (milesPerGallon75 * fuelCost);
+console.log("Will budget be enough to cover fuel expense at 75 MPH?\nResult: " + !(trip3 > budget))
+
+// Will budget be enough to cover fuel expense at 75 MPH?
+// Result: false
 
 // Q3: How long will the trip take, in hours?
+const tripTime1 = (totalMiles / mph55);
+console.log("The total trip time at 55 MPH will be Result:\n" + tripTime1 + " hours")
+
+// The total trip time at 55 MPH will be Result:
+// 27.272727272727273 hours
+
+const tripTime2 = (totalMiles / mph60);
+console.log("The total trip time at 60 MPH will be Result:\n" + tripTime2 + " hours")
+
+// The total trip time at 60 MPH will be Result:
+// 25 hours
+
+const tripTime3 = (totalMiles / mph75);
+console.log("The total trip time at 75 MPH will be Result:\n" + tripTime3 + " hours")
+
+// The total trip time at 75 MPH will be Result:
+// 20 hours
+
 // Q4: Compare the results when traveling 55,60,75 mph. Which makes the most sense for the trip?
+
